@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Resizer - Adaptive text box sizing </title>
+
+        <!-- CSS -->
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+
+		<!-- JS -->
+		<script type="text/javascript" src="js/resizer.js"></script>
+
+    </head>
+    <body>
+    	<!-- Header -->
+		<div id="info-tab" class="open"> 
+    		<div class="info first">
+        		<b>Resizer</b> a small library to improve the user experience of the text box, by resizing its text if it gets too long to fit.
+        		<p> 
+        			Made by: <a href="http://tholman.com"> Tim Holman </a> - <a href="http://twitter.com/twholman"> @twholman </a>
+     			</p>
+    		</div>
+    		<div class="info">
+        		This has been made using <i> Javascript </i> and behind the scenes, the HTML5 <i> canvas </i> element. You can find the source on <a href="http://github.com/tholman/resizer">Github</a>     
+        		<p>
+            		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://tholman.com/lab/resizer/" data-text="Nodes - a fun interactive #javascript experiment by @twholman">Tweet</a>
+           			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ftholman.com%2Flab%2Fresizer&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:107px; height:21px; margin-bottom: -1px;" allowTransparency="true"></iframe>
+        		</p>
+   			</div>
+    		<div id="title">Resizer</div>
+		</div>
+		<div id="back" class="open">
+    		<a href="/experiments"> More experiments </a> <span>&lsaquo;</span>
+		</div>
+		<script type="text/javascript" src="js/header.js"></script>
+
+		<!-- App -->
+        <input type='textbox' id='resizer' placeholder='Fill me with text.'>
+        <script>
+        	Resizer( document.getElementById( 'resizer' ) );
+		</script>
+
+        <!-- Misc -->
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-22825241-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        </script>
+        
+    </body>
+</html>
